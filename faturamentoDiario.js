@@ -22,7 +22,7 @@ function lerDadosJson(arquivo) {
     const dados = fs.readFileSync(arquivo, 'utf8');
     return JSON.parse(dados);
 }
-const faturamentoDiario = lerDadosJson('faturamento.json');
+const faturamentoDiario = lerDadosJson('faturamentos.json');
 
 
 const { menorFaturamento, maiorFaturamento, diasAcimaMedia } = calcularFaturamento(faturamentoDiario);
